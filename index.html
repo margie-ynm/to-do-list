@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Tasks</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a Task:</h2>
+          <form id="new-task">
+            <div class="form-group">
+              <label for="new-task-name">Name of Task</label>
+              <input type="text" class="form-control" id="new-task-name">
+            </div>
+            <div class="form-group">
+              <label for="new-things-name">Things needed:</label>
+              <input type="text" class="form-control" id="new-things-name">
+            </div>
+            <div class="form-group">
+              <label for="new-time-name">When to do it:</label>
+              <input type="text" class="form-control" id="new-time-name">
+            </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Tasks:</h2>
+          <ul id="tasks">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-task">
+            <h2></h2>
+            <p>Task: <span class="task-name"></span></p>
+            <p>Things Needed: <span class="things-name"></span></p>
+            <p>Time: <span class="time-name"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
